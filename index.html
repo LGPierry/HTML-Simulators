@@ -1,44 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Simulators | LABGEOTEC</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABGEOTEC | Simuladores Científicos</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #0f172a;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        main {
+            padding: 30px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            border-color: #3b82f6;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        .card p {
+            font-size: 13px;
+            color: #64748b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>HTML Simulators</h1>
-    <p>Interactive Digital Technical-Scientific Products</p>
-  </header>
+<header>
+    <h1>LABGEOTEC | Simuladores Científicos</h1>
+    <p>Ferramentas aplicadas ao Sensoriamento Remoto e Sistemas Ambientais</p>
+</header>
 
-  <main>
-    <section>
-      <h2>Simuladores disponíveis</h2>
+<main>
 
-      <div class="grid">
-        <a class="card" href="simuladores/simulador-01.html">
-          <h3>Simulador 01</h3>
-          <p>Acessar simulador interativo.</p>
+    <div class="grid">
+
+        <a class="card" href="simuladores/espectral-multivariado.html">
+            <h3>Simulador Espectral Multivariado</h3>
+            <p>Modelagem espectral aplicada a variáveis limnológicas e qualidade da água.</p>
         </a>
 
-        <a class="card" href="simuladores/simulador-02.html">
-          <h3>Simulador 02</h3>
-          <p>Acessar simulador interativo.</p>
+        <a class="card" href="simuladores/floramento-algal.html">
+            <h3>Simulador de Floramento Algal</h3>
+            <p>Simulação da dinâmica de blooms algais com base em variáveis ambientais.</p>
         </a>
 
-        <a class="card" href="simuladores/simulador-03.html">
-          <h3>Simulador 03</h3>
-          <p>Acessar simulador interativo.</p>
+        <a class="card" href="simuladores/estado-trofico.html">
+            <h3>Simulador de Estado Trófico</h3>
+            <p>Classificação do estado trófico com base em parâmetros limnológicos.</p>
         </a>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>LABGEOTEC | UFSM | MIT License</p>
-  </footer>
+        <a class="card" href="simuladores/orbital-sentinel2.html">
+            <h3>Simulador Orbital - Sentinel-2</h3>
+            <p>Análise de parâmetros orbitais e aquisição de dados do sensor MSI.</p>
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+    Desenvolvido no âmbito do LABGEOTEC • UFSM • CNPq  
+    <br>
+    Projeto de Iniciação Científica — Sensoriamento Remoto Aplicado
+</footer>
 
 </body>
 </html>
